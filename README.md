@@ -39,5 +39,5 @@ docker run --rm \
   -ti \
   -v global_mysqlData:/var/lib/mysql \
   -v $(pwd)/backup:/backup \
-  xtrabackup --copy-back --target-dir=/backup --datadir=/var/lib/mysql
+  dustinrue/xtrabackup --copy-back --target-dir=/backup --datadir=/var/lib/mysql
 ```
