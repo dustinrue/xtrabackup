@@ -11,7 +11,7 @@ This image must be able to talk directly to the volume holding the MySQL data fi
 Here is an example of creating a backup for wp-local-docker. With MySQL running, issue:
 
 ```
-docker run --network wplocaldocker \
+docker run \
   --rm \
   --name xtrabackup \
   --network wplocaldocker \
